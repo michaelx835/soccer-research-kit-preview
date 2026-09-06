@@ -36,12 +36,7 @@ It does **not** place orders. It does not come with my accounts, API keys, priva
 
 The internal work has taken months; the standalone package is much newer. It's a command-line beta, not a polished consumer app. The preview has 23 automated tests and a short joint live-provider check on one fixture. That's encouraging engineering progress, but it's not evidence of flawless season-long coverage. Longer collection runs and independent onboarding are part of the next validation steps.
 
-I'm considering these introductory prices:
-
-- **$79 one-time:** the self-hosted research software package, source distribution under the final customer license, setup docs, synthetic demo and example reports.
-- **$199 one-time:** the same package plus setup on one standard supported machine and seven calendar days of installation help.
-
-Provider subscriptions and hosting are separate. Future major versions, live execution and unlimited support are not included promises. I'm checking interest before opening payments and finalizing the terms.
+I'm keeping the first pilot deliberately small and selective. This is not an open free tier or a hosted service. Access and support will be handled case by case while I learn what users actually need. If it proves useful, I may offer a paid beta with self-install and assisted-setup options; I’ll discuss exact scope with selected testers rather than turn this post into a sales page.
 
 You'd need a Mac or Linux machine, Python 3.11+, some comfort with a terminal, and your own API access for real collection. The included synthetic demo needs no accounts. API-Football also has a free plan for initial access tests, but its request and season limits mean it isn't a free all-day live feed. [Official plan details](https://www.api-football.com/pricing).
 
