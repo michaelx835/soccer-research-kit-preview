@@ -57,7 +57,7 @@ football-research discover --config config.local.json --date 2026-09-07 --out ru
 4. Inspect `runs/live/review-2026-09-07.json`. Compare both teams, date/time,
    women's/reserve/youth status and market rules. Suggestions may be wrong and
    are not restricted by a verified Kalshi kickoff. Choose actual tickers and
-   add bindings with the `bind` command or following [the binding guide](docs/BINDINGS.md).
+   add bindings with the `bind` command or following [the binding guide](BINDINGS.md).
 5. Validate and run a bounded session:
 
 ```sh
