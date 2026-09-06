@@ -127,7 +127,9 @@ all archive files as one dataset; follow the manifest or use SQLite.
 
 ## Support the project
 
-If this framework was useful for your research, you can optionally [buy me a coffee](https://buymeacoffee.com/michaelx835).
+If this framework gave you a useful idea or helped your research, you can optionally [buy me a coffee](https://buymeacoffee.com/michaelx835) as a small way to support the work.
+
+If you would like to try the paid beta version, please email **michaelx835@gmail.com** to discuss access, scope and setup.
 
 Support does not include private code, trading signals, hosted data or technical support.
 
