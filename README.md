@@ -125,6 +125,12 @@ all archive files as one dataset; follow the manifest or use SQLite.
 - [Release checklist and support boundaries](RELEASE.md)
 - [Dependencies and data rights](NOTICE.md)
 
+## Support the project
+
+If this framework was useful for your research, you can optionally [buy me a coffee](https://buymeacoffee.com/michaelx835).
+
+Support does not include private code, trading signals, hosted data or technical support.
+
 ```sh
 python -m unittest discover -s tests -v
 ```
