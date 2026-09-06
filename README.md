@@ -69,7 +69,14 @@ football-research discover --config config.local.json --date 2026-09-07 --out ru
 ```sh
 football-research validate --config config.local.json
 football-research doctor --config config.local.json --out runs/live --online
-football-research collect --config config.local.json --out runs/live --cycles 10
+football-research collect --config config.local.json --o
+
+## Support the project
+
+If this framework gave you a useful idea or helped your research, you can optionally [buy me a coffee](https://buymeacoffee.com/michaelx835) as a small way to support the work.
+
+If you would like to try the paid beta version, please email **michaelx835@gmail.com** to discuss access, scope and setup.
+ut runs/live --cycles 10
 football-research report --out runs/live --fee-rate 0.07
 football-research archive --out runs/live
 ```
