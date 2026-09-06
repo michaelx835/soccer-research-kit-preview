@@ -3,10 +3,11 @@
 Collect football fixtures and Kalshi market snapshots, inspect missing data,
 and reproduce a small, explicitly simulated strategy replay.
 
-**Local release candidate, not yet a paid general release.** Mock-provider and
-synthetic acceptance tests are included. API-Football and Kalshi have been jointly
-checked on one live fixture; a full-match soak and independent customer onboarding
-remain required. This tool makes no trading requests and provides no profitability claim.
+**Open-source release in preparation.** Mock-provider and synthetic acceptance
+tests are included. API-Football and Kalshi have been jointly checked on one live
+fixture, followed by a bounded complete-match collection test. The source package
+and license are being prepared for public release. This tool makes no trading
+requests and provides no profitability claim.
 
 ![Football Research Kit architecture](architecture.svg)
 
@@ -69,14 +70,7 @@ football-research discover --config config.local.json --date 2026-09-07 --out ru
 ```sh
 football-research validate --config config.local.json
 football-research doctor --config config.local.json --out runs/live --online
-football-research collect --config config.local.json --o
-
-## Support the project
-
-If this framework gave you a useful idea or helped your research, you can optionally [buy me a coffee](https://buymeacoffee.com/michaelx835) as a small way to support the work.
-
-If you would like to try the paid beta version, please email **michaelx835@gmail.com** to discuss access, scope and setup.
-ut runs/live --cycles 10
+football-research collect --config config.local.json --out runs/live --cycles 10
 football-research report --out runs/live --fee-rate 0.07
 football-research archive --out runs/live
 ```
@@ -136,7 +130,9 @@ all archive files as one dataset; follow the manifest or use SQLite.
 
 If this framework gave you a useful idea or helped your research, you can optionally [buy me a coffee](https://buymeacoffee.com/michaelx835) as a small way to support the work.
 
-If you would like to try the paid beta version, please email **michaelx835@gmail.com** to discuss access, scope and setup.
+I have decided to release the standalone research toolkit as open source. If you
+would like to try the current version or follow the release, please email
+**michaelx835@gmail.com** with a short note about your research setup.
 
 Support does not include private code, trading signals, hosted data or technical support.
 
@@ -144,6 +140,6 @@ Support does not include private code, trading signals, hosted data or technical
 python -m unittest discover -s tests -v
 ```
 
-No third-party raw historical dataset is included. Customers must have appropriate
-provider access and comply with data licenses. This repository is a public
-documentation preview; it is not currently offered for sale.
+No third-party raw historical dataset is included. Users must have appropriate
+provider access and comply with data licenses. This repository is currently a
+public documentation preview; the source release and license are being finalized.
