@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "poll_seconds": 60,
+  "archive_max_bytes": 8000000,
+  "leagues": [{"api_league_id": 39, "season": 2026, "kalshi_series": ["KXEPLGAME", "KXEPLTOTAL"]}],
+  "bindings": []
+}

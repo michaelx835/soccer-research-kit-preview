@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430" role="img" aria-labelledby="title desc">
+  <title id="title">Soccer Research Kit architecture</title>
+  <desc id="desc">Read-only football and Kalshi inputs flow through review and collection into storage, quality reports and replay.</desc>
+  <defs>
+    <style>
+      .box{fill:#f5f7fb;stroke:#334155;stroke-width:2;rx:14}
+      .in{fill:#e0f2fe;stroke:#0369a1;stroke-width:2;rx:14}
+      .out{fill:#ecfdf5;stroke:#047857;stroke-width:2;rx:14}
+      .t{font-family:Arial,sans-serif;fill:#0f172a;text-anchor:middle}
+      .h{font-size:20px;font-weight:700}.s{font-size:15px}.arrow{stroke:#64748b;stroke-width:3;fill:none;marker-end:url(#m)}
+    </style>
+    <marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/></marker>
+  </defs>
+  <rect width="1100" height="430" fill="#ffffff"/>
+  <text x="550" y="36" class="t h">Football Research Kit — read-only research flow</text>
+  <rect x="45" y="90" width="220" height="105" class="in"/><text x="155" y="128" class="t h">API-Football</text><text x="155" y="157" class="t s">fixtures · events</text><text x="155" y="180" class="t s">stats when supplied</text>
+  <rect x="45" y="250" width="220" height="105" class="in"/><text x="155" y="288" class="t h">Kalshi</text><text x="155" y="317" class="t s">market metadata</text><text x="155" y="340" class="t s">orderbook snapshots</text>
+  <rect x="335" y="155" width="210" height="135" class="box"/><text x="440" y="195" class="t h">Review</text><text x="440" y="224" class="t s">team identity</text><text x="440" y="247" class="t s">kickoff &amp; rules</text><text x="440" y="270" class="t s">explicit binding</text>
+  <rect x="615" y="155" width="190" height="135" class="box"/><text x="710" y="195" class="t h">Collect</text><text x="710" y="224" class="t s">bounded REST</text><text x="710" y="247" class="t s">timestamps</text><text x="710" y="270" class="t s">errors &amp; latency</text>
+  <rect x="875" y="80" width="180" height="105" class="out"/><text x="965" y="118" class="t h">SQLite</text><text x="965" y="147" class="t s">raw + normalized</text><text x="965" y="170" class="t s">deduplicated</text>
+  <rect x="875" y="225" width="180" height="105" class="out"/><text x="965" y="263" class="t h">Reports</text><text x="965" y="292" class="t s">quality coverage</text><text x="965" y="315" class="t s">replay simulation</text>
+  <path d="M265 140 H330" class="arrow"/><path d="M265 300 H300 V245 H330" class="arrow"/><path d="M545 222 H610" class="arrow"/><path d="M805 190 H865" class="arrow"/><path d="M805 255 H865" class="arrow"/>
+  <text x="550" y="392" class="t s">No order endpoints · no GPT calls · no profitability claim</text>
+</svg>

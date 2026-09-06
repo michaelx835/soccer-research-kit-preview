@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+    <title>Football Research Kit | Run report</title><style>
+    body{background:#101923;color:#e9f0f5;font:16px system-ui;margin:0;padding:5vw;line-height:1.5}
+    main{max-width:1100px;margin:auto}h1{font-size:38px}p{color:#b6c6d6}.grid{display:flex;gap:15px;flex-wrap:wrap}
+    .card{background:#1e2b39;border-radius:12px;padding:22px;flex:1;min-width:150px}.card span{display:block;color:#a8bbce}
+    strong{font-size:28px;color:#78dfc1}table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:12px;border-bottom:1px solid #34465a;text-align:left}
+    pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#1e2b39;padding:20px;border-radius:10px}.scroll{overflow:auto}
+    .notice{border-left:4px solid #f0bf72;padding:15px;background:#242b32}a{color:#78dfc1}</style><main>
+    <p>FOOTBALL RESEARCH KIT · V0.1</p><h1>Collection & replay report</h1><p class='notice'>SYNTHETIC DEMONSTRATION. Displayed-depth simulation is not a real fill or proof of profitability.</p><div class='grid'><div class='card'><span>Fixtures</span><strong>6</strong></div><div class='card'><span>Snapshots</span><strong>30</strong></div><div class='card'><span>Simulated entries</span><strong>4</strong></div><div class='card'><span>Unsettled positions</span><strong>1</strong></div></div><h2>Example replay</h2><p>Closed simulated P&amp;L: $-0.8800. Open cost + fees: $0.6900.</p><div class='scroll'><table><tr><th>Fixture</th><th>Market</th><th>Entry $</th><th>Status</th><th>P&amp;L $</th></tr><tr><td>demo-1</td><td>SYNTHETIC-TOTAL-1-O25</td><td>0.6699999999999999</td><td>EXIT_SIMULATED</td><td>0.03</td></tr><tr><td>demo-2</td><td>SYNTHETIC-TOTAL-2-O25</td><td>0.6699999999999999</td><td>EXIT_SIMULATED</td><td>-0.22</td></tr><tr><td>demo-3</td><td>SYNTHETIC-TOTAL-3-O25</td><td>0.6699999999999999</td><td>SETTLED</td><td>-0.69</td></tr><tr><td>demo-6</td><td>SYNTHETIC-TOTAL-6-O25</td><td>0.6699999999999999</td><td>OPEN</td><td>None</td></tr></table></div><h2>Quality & coverage</h2><pre>{
+  &quot;independent_fixtures&quot;: 6,
+  &quot;counts&quot;: {
+    &quot;snapshots&quot;: 30,
+    &quot;synthetic_snapshots&quot;: 30,
+    &quot;missing_score&quot;: 0,
+    &quot;expected_market_slots&quot;: 120,
+    &quot;missing_market_slots&quot;: 5,
+    &quot;shots_missing_team_slots&quot;: 20,
+    &quot;sot_missing_team_slots&quot;: 20,
+    &quot;corners_missing_team_slots&quot;: 20,
+    &quot;xg_missing_team_slots&quot;: 20,
+    &quot;market_snapshots&quot;: 114,
+    &quot;source_timestamp_unknown&quot;: 114,
+    &quot;empty_book_side&quot;: 0
+  },
+  &quot;market_receipt_age_seconds&quot;: {
+    &quot;n&quot;: 114,
+    &quot;p50&quot;: 3,
+    &quot;p95&quot;: 90,
+    &quot;max&quot;: 100
+  },
+  &quot;cross_market_receipt_skew_seconds&quot;: {
+    &quot;n&quot;: 30,
+    &quot;p50&quot;: 2,
+    &quot;p95&quot;: 10,
+    &quot;max&quot;: 10
+  },
+  &quot;observed_fixture_intervals_seconds&quot;: {
+    &quot;n&quot;: 24,
+    &quot;p50&quot;: 840,
+    &quot;p95&quot;: 5040,
+    &quot;max&quot;: 5040
+  },
+  &quot;denominators&quot;: {
+    &quot;stats_team_slots&quot;: 60,
+    &quot;score_slots&quot;: 30
+  },
+  &quot;coverage_scope&quot;: &quot;Reviewed configured fixtures only; not all football matches&quot;,
+  &quot;note&quot;: &quot;Missing statistics remain missing. An empty event list does not prove an event feed is complete.&quot;,
+  &quot;request_and_collection_errors&quot;: 0,
+  &quot;error_classes&quot;: {},
+  &quot;cycles&quot;: 0,
+  &quot;poll_overruns&quot;: 0
+}</pre><h2>Assumptions</h2><pre>{
+  &quot;parameters&quot;: {
+    &quot;fee_rate&quot;: 0.07,
+    &quot;quantity&quot;: 1,
+    &quot;hold_seconds&quot;: 900,
+    &quot;slippage_dollars_per_contract_per_trade&quot;: 0.01,
+    &quot;max_exit_delay&quot;: 120,
+    &quot;max_receipt_age&quot;: 30
+  },
+  &quot;limitations&quot;: [
+    &quot;Receipt freshness is not exchange quote age&quot;,
+    &quot;No queue or latency fill model&quot;,
+    &quot;No predictive edge claim; parameters were not fitted to these samples&quot;
+  ]
+}</pre></main></html>
