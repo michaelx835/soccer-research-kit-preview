@@ -8,6 +8,12 @@ synthetic acceptance tests are included. API-Football and Kalshi have been joint
 checked on one live fixture; a full-match soak and independent customer onboarding
 remain required. This tool makes no trading requests and provides no profitability claim.
 
+![Football Research Kit architecture](architecture.svg)
+
+The diagram is intentionally high-level. The public preview does not contain the
+production collectors, private mappings, account credentials, live strategies or
+real historical archives.
+
 ## Quick start (macOS / Linux, Python 3.11+)
 
 ```sh
