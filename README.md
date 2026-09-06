@@ -119,7 +119,6 @@ all archive files as one dataset; follow the manifest or use SQLite.
 ## Documentation & verification
 
 - [Detailed product introduction and onboarding](GITHUB_SHOWCASE.md)
-- [Reddit introduction draft](REDDIT_POST.md)
 - [Field definitions](SCHEMA.md)
 - [Bindings and identity review](BINDINGS.md)
 - [Architecture and extraction audit](AUDIT.md)
